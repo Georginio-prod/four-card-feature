@@ -19,6 +19,7 @@ body {
     align-items: center;
     margin: auto;
     flex-direction: column;
+    position: relative;
     gap: 20px;
 }
 
@@ -48,3 +49,98 @@ body {
 }
 
 
+
+.card__team {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px ;
+    box-shadow: 5px 5px 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.card__team--tea {
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+
+
+.card__karma {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px ;
+    box-shadow: 5px 5px 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.card__karma--kar {
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 30px;
+    display: flex;
+    
+    
+}
+
+
+.card__sup {
+    
+
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px ;
+    box-shadow: 5px 5px 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.card__sup--sup {
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+
+.card__cal {
+       
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px ;
+    box-shadow: 5px 5px 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.card__cal--cal {
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 30px;
+    display: flex;
+    
+    
+}
+
+.card__team--title{
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
