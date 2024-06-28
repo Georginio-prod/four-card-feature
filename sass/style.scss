@@ -8,9 +8,7 @@
 body {
     background-color: rgb(255, 255, 255);
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .container {
@@ -55,9 +53,11 @@ body {
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 2px 1px 3px 0 ;
+    border-top: 3px solid red;
     padding-left: 20px;
     padding-right: 20px;
+    
 
 
 }
@@ -78,7 +78,8 @@ body {
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 2px 1px 3px 0 ;
+    border-top: 3px solid rgb(232, 248, 5);
     padding-left: 20px;
     padding-right: 20px;
 
@@ -96,16 +97,14 @@ body {
 
 
 .card__sup {
-    
-
     width: 300px;
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 2px 1px 3px 0 ;
+    border-top: 3px solid rgb(5, 243, 25);
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 .card__sup--sup {
@@ -124,7 +123,8 @@ body {
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 2px 1px 3px 0 ;
+    border-top: 3px solid rgb(0, 4, 255);
     padding-left: 20px;
     padding-right: 20px;
 
@@ -143,4 +143,27 @@ body {
 .card__team--title{
     margin-top: 25px;
     padding-bottom: 10px;
+}
+
+
+
+.attribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3D8168;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;    
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.attribution a:visited {
+    color: rgb(17, 16, 17); /* Couleur des liens visités */
+}
+
+.attribution a:hover {
+    color: rgb(102, 11, 11); /* Couleur des liens au survol */
 }
