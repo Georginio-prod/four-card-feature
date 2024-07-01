@@ -1,146 +1,176 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'poppins', sans-serif;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #F2F2F2;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+   
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
-    position: relative;
-    gap: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 50px;
 }
 
 .text__title {
-    position: relative;
-    top: 0;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 36px;
-    
-    
-}
+    color: #4D4F62;
+    &--h1 {
+        font-weight: 100;
+        
+    }
 
-.text__title--h1{
-   font-weight: 100;
-    color: rgb(201, 198, 198);    
-}
-
-.text__title--h2 {
-    font-weight: 600;
-
+    &--h2 {
+        font-weight: 600;
+       
+    }
 }
 
 .text__title--desc {
-    
+    grid-column: 1 / -1;
     text-align: center;
+    margin-top: 10px; 
+    font-size: 15px;
+    opacity: 50%;
+    color: #4D4F62;
+}
+
+.card__section {
+    height: 530px;
+    max-width: 1110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1f 2f 1f;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+
+}
+
+@media (max-width: 1560px) {
+    .card__section {
+        max-width: 1360px;
+        max-height: 375px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .card__second--supervisor,
+    .card__second--team,
+    .card__second--karma,
+    .card__second--calculator{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .position{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text__title{
+        font-size: 24px;
+    }
+    .text__title--desc {
+        font-size: 14px;
+    }
 }
 
 
-
-.card__team {
-    width: 300px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
+.card__second--supervisor,
+.card__second--team,
+.card__second--karma,
+.card__second--calculator{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    
+   
 }
 
-.card__team--tea {
-    position: relative;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 30px;
+
+.card__second--supervisor {
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    align-self: center;
+    border-top: 5px solid #44D3D2;
+    line-height: 1.5;
+    
+}
+
+.card__second--team{
+    border-top: 5px solid #EA5454;
+}
+
+.card__second--karma {
+    border-top: 5px solid #FCAE4A;
+}
+.card__second--team,
+.card__second--karma {
+    grid-column: 2;
+    line-height: 1.5;
+}
+
+.card__second--calculator {
+    grid-column: 3;
+    grid-row: 1/ span 2;
+    align-self: center;
+    border-top: 5px solid #549EF2;
+    line-height: 1.5;
+   
+    
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    color: #4D4F62;
+}
+
+.text--color {
+    color: #4D4F62;
+    opacity: 50%;
+}
+
+.position {
+    margin-top: 45px;
+    margin-left: 25vh;
+}
+
+
+.attribution {
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    color: #3D8168;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+    a:visited {
+        color: rgb(17, 16, 17); /* Couleur des liens visités */
+    }
+
+    a:hover {
+        color: rgb(102, 11, 11); /* Couleur des liens au survol */
+    }
 }
 
-
-
-.card__karma {
-    width: 300px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-.card__karma--kar {
-    position: relative;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 30px;
-    display: flex;
-    
-    
-}
-
-
-.card__sup {
-    
-
-    width: 300px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-.card__sup--sup {
-    position: relative;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 30px;
-    display: flex;
-    
-}
-
-
-.card__cal {
-       
-    width: 300px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px ;
-    box-shadow: 5px 5px 5px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-.card__cal--cal {
-    position: relative;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 30px;
-    display: flex;
-    
-    
-}
-
-.card__team--title{
-    margin-top: 25px;
-    padding-bottom: 10px;
-}
